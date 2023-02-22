@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+/* css footer */
+
+#footer {
+  background-color: #333;
+  color: white;
+}
+#footer .gigi-footer{
+  color:white;
+}
+
+#footer .gigi-footer2{
+      background-color: #222;
+}
+.gigispan{
+  color:whitesmoke;
+  font-size: 1.3em;
+}
+/* end css footer */
+
 
 
 
