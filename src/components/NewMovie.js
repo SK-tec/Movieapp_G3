@@ -1,6 +1,8 @@
 
 const NewMovie = () => {
-    return ( <></> );
+    return ( <>
+    
+    </> );
 }
  
 export default NewMovie;
