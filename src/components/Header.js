@@ -25,8 +25,8 @@ export default function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">About us</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#aboutus">About us</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
             <NavDropdown title="Movies links" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Watchlist</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
