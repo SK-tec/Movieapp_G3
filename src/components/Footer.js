@@ -1,13 +1,61 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
 
 
 export default function Footer(){
     return (
         
         <footer id="footer">
+
+<div class="container gigi-footer">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+
+          <div class="col-lg-4 col-md-8 col-xs-12 mb-3">
+              <h4>BE THE FIRST TO KNOW</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">Join us on this cinematic journey and let's explore the world of movies together. Sign up for our newsletter today.</li>
+                
+                
+              </ul>
+            </div>
+           
+        
+            <div class="col-lg-5 col-md-8 col-xs-12 mb-3">
+           
+      <InputGroup className="mb-3">
+        <Form.Control
+          placeholder="Email address"
+          aria-label="Email address"
+          aria-describedby="basic-addon2"
+        />
+        <Button variant="outline-secondary" id="button-addon2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="GhostWhite" class="bi bi-send-fill" viewBox="0 0 16 16">
+  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+</svg>
+        </Button>
+      </InputGroup>
+        
+            </div>
+            
+           
+        
+            <div class="col-lg-3 col-md-8 col-xs-12 mb-3">
+              <h4>Stay Connected</h4>
+              <ul class="nav flex-column">
+              <li class="nav-item mb-2">Get the latest movie updates! </li>
+              
+          
+               
+                
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+
       <div class="container gigi-footer">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
 
