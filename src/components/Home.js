@@ -1,18 +1,7 @@
-// import { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-// import axios from "axios";
-// import Loading from "./Loading";
-import Header from "./Header";
-import Footer from "./Footer";
+import React from "react";
 
-const Home = () => {
-  return (
-    <div className="App">
-      <Header />
-      <h1 style={{ color: "Blue" }}>Welcome to Movie App Project</h1>
-      <Footer />
-    </div>
-  );
-};
+function Home() {
+  return <div>Home</div>;
+}
 
 export default Home;
