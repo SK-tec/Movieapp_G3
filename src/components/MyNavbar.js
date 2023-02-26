@@ -5,68 +5,76 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
-import { NavLink } from "react-router-dom";
-
 const MyNavbar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
-          <LinkContainer to="/home">
-            <Navbar.Brand>
-              <img
-                alt=""
-                src="/logo192.png"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-              />{" "}
-              OurSiteName
-            </Navbar.Brand>
-          </LinkContainer>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <LinkContainer to="/home">
-                <Nav.Link className="navLink">Home</Nav.Link>
-              </LinkContainer>
-              <LinkContainer exact to="/about-us">
-                <Nav.Link className="navLink">About us</Nav.Link>
-              </LinkContainer>
-              <LinkContainer exact to="/contact">
-                <Nav.Link className="navLink">Contact</Nav.Link>
-              </LinkContainer>
-              <NavDropdown title="Movies links" id="collasible-nav-dropdown">
-                <LinkContainer to="/watchlist">
-                  <NavDropdown.Item className="dropdown-navLink">
-                    Watchlist
-                  </NavDropdown.Item>
-                </LinkContainer>
+      <div id="header">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Container>
+            <LinkContainer to="/">
+              <Navbar.Brand href="#home">
+                <img
+                  alt=""
+                  src="/logo192.png"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />{" "}
+                OurSiteName
+              </Navbar.Brand>
+            </LinkContainer>
 
-                <LinkContainer to="/trendingnow">
-                  <NavDropdown.Item className="dropdown-navLink">
-                    Trending now
-                  </NavDropdown.Item>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+                <LinkContainer to="/">
+                  <Nav.Link>Home</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/recommended">
-                  <NavDropdown.Item className="dropdown-navLink">
-                    Recommended
-                  </NavDropdown.Item>
+                <LinkContainer to="/aboutus">
+                  <Nav.Link>About us</Nav.Link>
                 </LinkContainer>
-              </NavDropdown>
-            </Nav>
-            <Nav>
-              <LinkContainer href="#">
-                <Button variant="outline-secondary">Log in</Button>
-              </LinkContainer>
-              <LinkContainer href="#">
-                <Button variant="outline-secondary">Sign up</Button>
-              </LinkContainer>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+                <LinkContainer to="/contact">
+                  <Nav.Link>Contact</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/movieslinks">
+                  <NavDropdown
+                    title="Movies links"
+                    id="collasible-nav-dropdown"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Watchlist
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Trending now
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      TOP 10
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">
+                      Recommended
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </LinkContainer>
+              </Nav>
+              <Nav>
+                <LinkContainer to='/login'>
+                  <Nav.Link href="#">
+                    <Button variant="outline-secondary">Log in</Button>
+                  </Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='/signup'>
+                  <Nav.Link href="#">
+                    <Button variant="outline-secondary">Sign up</Button>
+                  </Nav.Link>
+                </LinkContainer>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
     </>
   );
 };
+
 export default MyNavbar;
