@@ -9,7 +9,9 @@ import Contact from "./components/Contact";
 import Watchlist from "./components/Watchlist";
 import Trendingnow from "./components/Trendingnow";
 import Recommended from "./components/Recommended";
+import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+
 
 import { Routes, Route } from "react-router-dom";
 
@@ -25,6 +27,7 @@ function App() {
         <Route path="/trendingnow" element={<Trendingnow />} />
         <Route path="/recommended" element={<Recommended />} />
       </Routes>
+      <Hero/>
       <Footer />
     </div>
   );
