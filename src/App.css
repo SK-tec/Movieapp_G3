@@ -4,11 +4,9 @@
 
 /* css header */
 
-
-#header .nav-link{
-
+#MyNavbar .nav-link {
   color: white;
-} 
+}
 
 /* end css header */
 
@@ -19,29 +17,31 @@
   color: white;
   text-align: left;
 }
-#footer .py-5{
-  padding-bottom: 1rem!important;
+#footer .py-5 {
+  padding-bottom: 1rem !important;
 }
-#footer .input-group>.form-control, .input-group>.form-floating, .input-group>.form-select{
+#footer .input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
   height: calc(3.5rem + 2px);
-  
 }
 #footer .first_class {
   padding-bottom: 21px;
   border-bottom: 1px solid #444;
 }
-#footer .gigi-footer{
-  color:white;
+#footer .gigi-footer {
+  color: white;
 }
 
-#footer .gigi-footer2{
-      background-color: #222;
+#footer .gigi-footer2 {
+  background-color: #222;
 }
-.gigispan{
-  color:whitesmoke;
+.gigispan {
+  color: whitesmoke;
   font-size: 1.3em;
 }
 /* end css footer */
+
 
 /*Hero section*/
 .hero{
