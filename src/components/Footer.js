@@ -19,7 +19,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-lg-5 col-md-8 col-xs-12 mb-3">
+          <div className="col-lg-4 col-md-8 col-xs-12 mb-3">
             <InputGroup className="mb-3">
               <Form.Control
                 placeholder="Email address"
@@ -41,7 +41,7 @@ export default function Footer() {
             </InputGroup>
           </div>
 
-          <div className="col-lg-3 col-md-8 col-xs-12 mb-3">
+          <div className=  "col-lg-3 col-md-8 col-xs-12 mb-3">{/*"col-lg-3 col-md-8 col-xs-12 mb-3"*/}
             <h4>Stay Connected</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">Get the latest movie updates! </li>
@@ -52,7 +52,7 @@ export default function Footer() {
 
       <div className="container gigi-footer">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
-          <div className="col-lg-3 col-md-6 col-xs-12 mb-3">
+          <div className="col-lg-4 col-md-6 col-xs-12 mb-3">
             <h4>A little about us</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -67,7 +67,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-xs-12 mb-3">
+          <div className="col-lg-4 col-md-8 col-xs-12 mb-3">{/*"col-lg-3 col-md-6 col-xs-12 mb-3"*/}
             <h4>Movie links</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -125,7 +125,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-xs-12 mb-3">
+          {/*<div className="col-lg-3 col-md-6 col-xs-12 mb-3">
             <h4>Tags</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -149,10 +149,10 @@ export default function Footer() {
                   <span className="gigispan">Post-apocalyptic</span> Slow-moving
                 </a>
               </li>
-            </ul>
-          </div>
+            </ul> 
+  </div>*/}
 
-          <div className="col-lg-3 col-md-6 col-xs-12 mb-3">
+          <div className="col-lg-3 col-md-8 col-xs-12 mb-3">{/*"col-lg-3 col-md-6 col-xs-12 mb-3">*/}
             <h4>Get in touch</h4>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
