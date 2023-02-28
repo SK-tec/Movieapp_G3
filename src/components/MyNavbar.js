@@ -12,7 +12,7 @@ const MyNavbar = () => {
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <LinkContainer to="/home">
+          <LinkContainer to="/">
             <Navbar.Brand>
               <img
                 alt=""
@@ -27,14 +27,14 @@ const MyNavbar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <LinkContainer to="/home">
-                <Nav.Link className="navLink">Home</Nav.Link>
+              <LinkContainer to="/">
+                <Nav.Link className="navLink text-white">Home</Nav.Link>
               </LinkContainer>
               <LinkContainer  to="/aboutus">
-                <Nav.Link className="navLink">About us</Nav.Link>
+                <Nav.Link className="navLink text-white">About us</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/contact">
-                <Nav.Link className="navLink">Contact</Nav.Link>
+                <Nav.Link className="navLink text-white">Contact</Nav.Link>
               </LinkContainer>
               <NavDropdown title="Movies links" id="collasible-nav-dropdown">
                 <LinkContainer to="/watchlist">
@@ -57,10 +57,10 @@ const MyNavbar = () => {
             </Nav>
             <Nav>
               <LinkContainer to="/login">
-                <Button variant="outline-secondary">Log in</Button>
+                <Button variant="outline-primary" className="mx-4 text-white">Log in</Button>
               </LinkContainer>
               <LinkContainer to="signup">
-                <Button variant="outline-secondary">Sign up</Button>
+                <Button variant="outline-primary" className="mx-4 text-white">Sign up</Button>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
