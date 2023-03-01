@@ -1,10 +1,11 @@
 import React from 'react'
 import '../App.css';
-import background from '../images/hero.jpg'
+import background from '../images/hero.jpg';
+
 
 export default function Hero() {
     return (
-
+        <>
         <div className ="hero" style ={{backgroundImage:`url(${background})` , height: '500px'}}>
         <div class="hero-text">
         <h1 >MovieBuff</h1> 
@@ -12,7 +13,7 @@ export default function Hero() {
         <button>Watch now</button>
         </div> 
         </div>
-
+        </>
     );
 
 }
