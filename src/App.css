@@ -2,10 +2,22 @@
   text-align: center;
 }
 
-/* css header */
+/* Navbar*/
 
-#MyNavbar .nav-link {
+#MyNavbar {
   color: white;
+  background: #000000;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-nav {
+  padding-right: 10px;
+  gap: 20px;
 }
 
 /* end css header */
@@ -42,12 +54,11 @@
 }
 /* end css footer */
 
-
 /*Hero section*/
-.hero{
+.hero {
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   height:75%;*/
-  height: '500px';
+  height: "500px";
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

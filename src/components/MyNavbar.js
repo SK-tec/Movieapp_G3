@@ -6,6 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
 import { NavLink } from "react-router-dom";
+import Logo from "./Apiflix-logo.png";
 
 const MyNavbar = () => {
   return (
@@ -15,13 +16,15 @@ const MyNavbar = () => {
           <LinkContainer to="/home">
             <Navbar.Brand>
               <img
-                alt=""
-                src="/logo192.png"
-                width="30"
-                height="30"
+                src={Logo}
+                alt="Logo"
+                width="80"
+                height="80"
                 className="d-inline-block align-top"
-              />{" "}
-              OurSiteName
+              />
+              <p className="h2" id="navbar-title">
+                Apiflix
+              </p>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -30,7 +33,7 @@ const MyNavbar = () => {
               <LinkContainer to="/home">
                 <Nav.Link className="navLink">Home</Nav.Link>
               </LinkContainer>
-              <LinkContainer  to="/aboutus">
+              <LinkContainer to="/aboutus">
                 <Nav.Link className="navLink">About us</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/contact">
