@@ -19,15 +19,15 @@ function App() {
     <div className="App">
       <MyNavbar />
       <Routes>
-        <Route path="/" element={<Header/>} />
-       
+        <Route path="/" element={<Header />} />
+
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/watchlist" element={<Watchlist />} />
         <Route path="/trendingnow" element={<Trendingnow />} />
         <Route path="/recommended" element={<Recommended />} />
       </Routes>
-    
+
       <Footer />
     </div>
   );
