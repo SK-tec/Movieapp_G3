@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import ListGroup from 'react-bootstrap/ListGroup';
 const Movies = () => {
 const [movies,setMovies]=useState([]);
 useEffect(()=>{
@@ -17,22 +18,26 @@ useEffect(()=>{
   .catch((e)=>console.log(e))
 },[])
     return ( <>
-    <Container className='mt-5 p-4'>
+    <Container className='mt-5 p-4 y'>
       <Row>
         
-        {movies.map((movie)=>(
-        
-        <Card style={{ width: '25rem'}} className="m-2" >
+        {movies.map((movie)=>(        
+        <Card style={{ width: '25rem'}} className="m-2 text-bg-dark"  >
         <Card.Img variant="top" src={movie.poster}/>
-        <Card.Body>
-          <Card.Title>{movie.title}</Card.Title>
+        <Card.Body >
+          <Card.Title className='text-warning'>{movie.title}</Card.Title>
           <Card.Text>
             {movie.synopsis}
           </Card.Text>
         </Card.Body>
-        <Card.Footer>
+        <ListGroup className="list-group-flush">
+        <ListGroup.Item className='text-bg-warning'><strong>Director: </strong>{movie.director}</ListGroup.Item>
+        <ListGroup.Item className='text-bg-danger'><strong>Release Year: </strong>{movie.year}</ListGroup.Item>
+        <ListGroup.Item className='text-bg-success'><strong>Rating: </strong>{movie.rating}</ListGroup.Item>
+      </ListGroup>
+        {/* <Card.Footer>
           <small className="text-muted">Rating:{movie.rating}</small>
-        </Card.Footer>
+        </Card.Footer> */}
       </Card>
       ))}
         
