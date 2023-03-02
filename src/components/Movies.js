@@ -17,7 +17,7 @@ useEffect(()=>{
   .catch((e)=>console.log(e))
 },[])
     return ( <>
-    <Container className='mt-5 p-4 y'>
+    <Container className='movie-grid mt-5 p-4 y'>
       <Row>
         
         {movies.map((movie)=>(        
