@@ -22,22 +22,20 @@ useEffect(()=>{
       <Row>
         
         {movies.map((movie)=>(        
-        <Card style={{ width: '25rem'}} className="m-2 text-bg-dark"  >
+        <Card style={{ width: '18rem'}} className="m-2 text-bg-dark"  >
         <Card.Img variant="top" src={movie.poster}/>
         <Card.Body >
           <Card.Title className='text-warning'>{movie.title}</Card.Title>
-          <Card.Text>
+          {/* <Card.Text>
             {movie.synopsis}
-          </Card.Text>
+          </Card.Text> */}
         </Card.Body>
         <ListGroup className="list-group-flush">
         <ListGroup.Item className='text-bg-warning'><strong>Director: </strong>{movie.director}</ListGroup.Item>
         <ListGroup.Item className='text-bg-danger'><strong>Release Year: </strong>{movie.year}</ListGroup.Item>
         <ListGroup.Item className='text-bg-success'><strong>Rating: </strong>{movie.rating}</ListGroup.Item>
       </ListGroup>
-        {/* <Card.Footer>
-          <small className="text-muted">Rating:{movie.rating}</small>
-        </Card.Footer> */}
+     
       </Card>
       ))}
         
