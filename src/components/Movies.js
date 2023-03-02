@@ -26,7 +26,7 @@ useEffect(()=>{
         <Card style={{ width: '18rem'}} className="m-2 text-bg-dark"  >
         <Card.Img variant="top" src={movie.poster}/>
         <Card.Body >
-          <Card.Title ><Link >{movie.title}</Link></Card.Title>
+          <Card.Title ><Link className='text-warning'>{movie.title}</Link></Card.Title>
           {/* <Card.Text>
             {movie.synopsis}
           </Card.Text> */}
