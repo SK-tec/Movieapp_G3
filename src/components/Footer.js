@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
+      
       <div className="container gigi-footer">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
           <div className="col-lg-4 col-md-6 col-xs-12 mb-3">

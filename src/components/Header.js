@@ -1,6 +1,7 @@
 import NewMovie from "./NewMovie";
 import Hero from "./Hero";
- import Movies from "./Movies";
+import Movies from "./Movies";
+ 
 const Header = () => {
     return ( <>
     <Hero/>
