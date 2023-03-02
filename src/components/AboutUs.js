@@ -1,9 +1,16 @@
+import Emoji from "./thinking.png";
+import Image from "./filmabout.png";
+
 const AboutUs = () => {
   return (
-    <>
-      <div className="row flex-column justify-content-center align-items-center text-center">
-        <h1 className="mb-5">About our Movie App</h1>
-        <p>
+    <div className="about-container">
+      <div className="heading-container">
+        <i className="fi fi-rr-popcorn" id="popcorn-icon"></i>
+        <h1 className="about-title">About Apiflix</h1>
+        <i class="fi fi-rr-film" id="film-icon"></i>
+      </div>
+      <div className="about-text-container">
+        <p className="about-text">
           Dear movie fans, We are thrilled to welcome you to our movie blog
           page! Whether you're a die-hard cinephile or just love to watch a good
           flick every now and then, this is the place for you. Our team of
@@ -20,11 +27,48 @@ const AboutUs = () => {
           favorite films, you've come to the right place. Join us on this
           cinematic journey and let's explore the world of movies together.
           Thank you for visiting our movie blog page. We can't wait to hear from
-          you! Best regards, Your Movie Blog Name team
+          you! Best regards, Your Apiflix team.
         </p>
-        <button className="btn btn-sm btn-primary">Read more</button>
+        <div className="howto-text-container">
+          <div className="howto-title-container">
+            <img src={Emoji} width="60"></img>
+            <h3 className="about-title">How to use the App?</h3>
+          </div>
+
+          <p className="howto-text">
+            We want you to have an amazing experience streaming and enjoying
+            your favorite movies, here you will find some steps to follow:
+          </p>
+          <div className="howto-steps-container">
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.{" "}
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+            </ul>
+            <img src={Image} width="300"></img>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
