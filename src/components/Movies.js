@@ -18,6 +18,7 @@ const Movies = () => {
           <small className="text-muted">Rating:</small>
         </Card.Footer>
       </Card>
+    
       <Card>
         <Card.Img variant="top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqgWkU4lJ49fP-biZlp_kNAWbfINefWmuBHNrMpTP_KCBMqvyw" />
         <Card.Body>
