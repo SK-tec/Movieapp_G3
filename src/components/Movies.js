@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -14,19 +13,18 @@ useEffect(()=>{
   axios
   .get(`${process.env.REACT_APP_SERVER_BASE_URL}/api/movies`)
   .then((res)=>{
-    console.log(res.data.url)
-    setMovies(res.data)})
+        setMovies(res.data)})
   .catch((e)=>console.log(e))
 },[])
     return ( <>
-    <Container className='mt-5 p-4 y'>
+    <Container className='movie-grid mt-5 p-4 y'>
       <Row>
         
         {movies.map((movie)=>(        
-        <Card style={{ width: '18rem'}} className="m-2 text-bg-dark"  >
+        <Card style={{ width: '18rem'}} className="m-2 text-bg-dark" key={movie.id}  >
         <Card.Img variant="top" src={movie.poster}/>
         <Card.Body >
-          <Card.Title ><Link className='text-warning'>{movie.title}</Link></Card.Title>
+          <Card.Title ><Link to={`/movies/${movie.id}`} className='text-warning'>{movie.title}</Link></Card.Title>
           {/* <Card.Text>
             {movie.synopsis}
           </Card.Text> */}
