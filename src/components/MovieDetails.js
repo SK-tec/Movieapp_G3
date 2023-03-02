@@ -4,6 +4,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { Container, Card } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 import { Row, Col, Button } from "react-bootstrap";
+import UpdateMovie from "./UpdateMovie";
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -51,9 +52,10 @@ const MovieDetails = () => {
               </ListGroup>
             </Card>
       
-            <Button variant="secondary" size="lg" className="m-2">
+            {/* <Button variant="secondary" size="lg" className="m-2" onClick={<UpdateMovie/>}>
           Update
-        </Button>
+        </Button> */}
+        <UpdateMovie/>
         <Button variant="secondary" size="lg" className="m-2">
           Delete
         </Button>
