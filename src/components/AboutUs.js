@@ -31,7 +31,7 @@ const AboutUs = () => {
         </p>
         <div className="howto-text-container">
           <div className="howto-title-container">
-            <img src={Emoji} width="60"></img>
+            <img src={Emoji} width="60" alt="Emoji"></img>
             <h3 className="about-title">How to use the App?</h3>
           </div>
 
@@ -64,7 +64,7 @@ const AboutUs = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </li>
             </ul>
-            <img src={Image} width="300"></img>
+            <img src={Image} width="300" alt="Movie"></img>
           </div>
         </div>
       </div>
