@@ -26,7 +26,7 @@ const Contact = () => {
       <div className="contact-form-container">
         <div className="contact-form-card">
           <div className="left">
-            <img src={Image}></img>
+            <img src={Image} alt="Contactemoji"></img>
           </div>
           <div className="right">
             <h1 className="contact-form-intro">Contact Us</h1>

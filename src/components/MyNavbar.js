@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
-import { NavLink } from "react-router-dom";
 import Logo from "./Apiflix-logo.png";
 
 const MyNavbar = () => {
