@@ -6,13 +6,13 @@ const Contact = () => {
   const [textarea, setTextarea] = useState("");
 
   const handleChange = (event) => {
-    console.log(event);
     const name = event.target.name;
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
   };
 
   const handleChangeText = (event) => {
+    console.log(event);
     setTextarea(event.target.value);
   };
 
@@ -57,6 +57,13 @@ const Contact = () => {
               />
               <input type="submit" />
             </form>
+            <div className="social-icons">
+              <i className="fi fi-brands-facebook" id="facebook-icon"></i>
+
+              <i className="fi-brands-instagram"></i>
+
+              <i className="fi-brands-twitter"></i>
+            </div>
           </div>
         </div>
       </div>
