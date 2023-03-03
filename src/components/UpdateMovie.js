@@ -57,7 +57,7 @@ function UpdateMovie() {
     <>
       <Container className="mt-5">
         <Button variant="danger" className="mb-5" onClick={handleShow}>
-          UpdateMovie
+          Update
         </Button>
 
         <Modal show={show} onHide={handleClose} className="my-modal">

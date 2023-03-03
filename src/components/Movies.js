@@ -7,6 +7,7 @@ import axios from 'axios';
 import { Link } from "react-router-dom";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
+import "../App.css";
 const Movies = () => {
 const [movies,setMovies]=useState([]);
 useEffect(()=>{
@@ -31,9 +32,9 @@ useEffect(()=>{
           
         </Card.Body>
         <ListGroup className="list-group-flush">
-        <ListGroup.Item className='text-bg-warning'><strong>Director: </strong>{movie.director}</ListGroup.Item>
-        <ListGroup.Item className='text-bg-danger'><strong>Release Year: </strong>{movie.year}</ListGroup.Item>
-        <ListGroup.Item className='text-bg-success'><strong>Rating: </strong>{movie.rating}</ListGroup.Item>
+        <ListGroup.Item className='director'><strong>Director: </strong>{movie.director}</ListGroup.Item>
+        <ListGroup.Item className='year'><strong>Release Year: </strong>{movie.year}</ListGroup.Item>
+        <ListGroup.Item className='rating'><strong>Rating: </strong>{movie.rating}</ListGroup.Item>
       </ListGroup>
      
       </Card>

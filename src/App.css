@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-family: "Urbanist", sans-serif;
-  background-color: rgb(3, 10, 54);
+  background-color: black;
   font-family: "Urbanist", sans-serif;  
 
 }
@@ -188,4 +188,16 @@
 .my-modal .modal-content {
   background-color: rgb(167, 98, 98);
   color: white;
+}
+
+.director{
+  background-color: #3795BD!important;
+  
+}
+.year{
+  background-color: #2F58CD!important;
+
+}
+.rating{
+  background-color: #4E31AA!important;
 }
