@@ -26,36 +26,39 @@ const Contact = () => {
       <div className="contact-form-container">
         <div className="contact-form-card">
           <div className="left">
-            <img src={Image}></img>
+            <h1 className="contact-form-h1">Contact Us</h1>
+            <img src={Image} className="contact-form-img"></img>
           </div>
           <div className="right">
-            <h1 className="contact-form-intro">Contact Us</h1>
-            <form onSubmit={handleSubmit}>
-              <label>
+            <form onSubmit={handleSubmit} className="form-body">
+              <label className="form-label">
                 Enter your name:
                 <input
+                  className="form-input"
                   type="text"
                   name="username"
                   value={inputs.username || ""}
                   onChange={handleChange}
                 />
               </label>
-              <label>
+              <label className="form-label">
                 Enter your email:
                 <input
+                  className="form-input"
                   type="email"
                   name="email"
                   value={inputs.email || ""}
                   onChange={handleChange}
                 />
               </label>
-              Enter your message:
+              <label className="form-label">Enter your message:</label>
               <textarea
+                className="form-input"
                 name="message"
                 value={textarea}
                 onChange={handleChangeText}
               />
-              <input type="submit" />
+              <input className="button-input" type="submit" />
             </form>
             <div className="social-icons">
               <i className="fi fi-brands-facebook" id="facebook-icon"></i>
