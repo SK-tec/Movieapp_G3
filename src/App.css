@@ -110,42 +110,10 @@
   align-content: center;
   gap: 20px;
 }
-/* css footer */
 
-#footer {
-  background-color: #333;
-  color: white;
-  text-align: left;
-}
-#footer .py-5 {
-  padding-bottom: 1rem !important;
-}
-#footer .input-group > .form-control,
-.input-group > .form-floating,
-.input-group > .form-select {
-  height: calc(3.5rem + 2px);
-}
-#footer .first_class {
-  padding-bottom: 21px;
-  border-bottom: 1px solid #444;
-}
-#footer .gigi-footer {
-  color: white;
-}
-
-#footer .gigi-footer2 {
-  background-color: #222;
-}
-.gigispan {
-  color: whitesmoke;
-  font-size: 1.3em;
-}
-/* end css footer */
-
-/*Hero section*/
+/* Hero section
 .hero {
-  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  height:75%;*/
+  
   height: "500px";
   background-position: center;
   background-repeat: no-repeat;
@@ -179,6 +147,8 @@
 }
 
 /*hero section end here */
+
+
 .movie-grid img{
   width: 100%;
   height: 18vw;
@@ -189,3 +159,65 @@
   background-color: rgb(167, 98, 98);
   color: white;
 }
+
+
+/* css hero2  section 2 */
+
+#gigihero{
+  color: #0dcaf0;
+  background-image: url('images/hero.jpg');
+  height: '500px';
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+#gigihero2{
+  
+  background-color: #20202068;
+}
+#gigihero .gigibtn{
+  
+ max-width: 350px;
+}
+
+#gigihero .input-group > .form-control, .input-group > .form-floating, .input-group > .form-select {
+  height: calc(3.5rem + 2px);
+  
+}
+/* END css hero2  section  */
+
+
+
+/* css footer */
+
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: left;
+}
+#footer .py-5 {
+  padding-bottom: 1rem !important;
+}
+#footer .input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
+  height: calc(3.5rem + 2px);
+}
+#footer .first_class {
+  padding-bottom: 21px;
+  border-bottom: 1px solid #444;
+}
+#footer .gigi-footer {
+  color: white;
+}
+
+#footer .gigi-footer2 {
+  background-color: #222;
+}
+.gigispan {
+  color: whitesmoke;
+  font-size: 1.3em;
+}
+/* end css footer */
