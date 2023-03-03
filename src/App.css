@@ -2,6 +2,8 @@
   text-align: center;
   font-family: "Urbanist", sans-serif;
   background-color: rgb(3, 10, 54);
+  font-family: "Urbanist", sans-serif;  
+
 }
 
 /* Navbar*/
@@ -177,12 +179,12 @@
 }
 
 /*hero section end here */
-
-.card-img-top {
+.movie-grid img{
   width: 100%;
   height: 18vw;
   padding: 5px;
 }
+
 .my-modal .modal-content {
   background-color: rgb(167, 98, 98);
   color: white;
