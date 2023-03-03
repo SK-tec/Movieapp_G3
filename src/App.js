@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <MyNavbar />
       <Routes>
-        <Route path="/" element={<Header/>} />       
+        <Route path="/" element={<Header />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/movies/:id" element={<MovieDetails />} />
@@ -29,7 +29,7 @@ function App() {
         <Route path="/trendingnow" element={<Trendingnow />} />
         <Route path="/recommended" element={<Recommended />} />
       </Routes>
-    
+
       <Footer />
     </div>
   );
