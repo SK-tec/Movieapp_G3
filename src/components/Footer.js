@@ -49,6 +49,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <hr />
       
       <div className="container gigi-footer">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
@@ -123,34 +124,7 @@ export default function Footer() {
                 Popular family-friendly movies
               </li>
             </ul>
-          </div>
-
-          {/*<div className="col-lg-3 col-md-6 col-xs-12 mb-3">
-            <h4>Tags</h4>
-            <ul className="nav flex-column">
-              <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">
-                  {" "}
-                  Based on a book <span className="gigispan">
-                    {" "}
-                    Insightful
-                  </span>{" "}
-                  Friendship <span className="gigispan">
-                    {" "}
-                    Spanish language
-                  </span>{" "}
-                  Hearth-warming <span className="gigispan">
-                    {" "}
-                    Charming
-                  </span>{" "}
-                  Dark Need a laugh
-                  <span className="gigispan"> Based on a true story</span> Funny
-                  Independent Violent{" "}
-                  <span className="gigispan">Post-apocalyptic</span> Slow-moving
-                </a>
-              </li>
-            </ul> 
-  </div>*/}
+          </div>         
 
           <div className="col-lg-3 col-md-8 col-xs-12 mb-3">{/*"col-lg-3 col-md-6 col-xs-12 mb-3">*/}
             <h4>Get in touch</h4>

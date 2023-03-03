@@ -31,7 +31,7 @@ const MovieDetails = () => {
               <Card.Img variant="top" src={movie?.poster} thumbnail />
             </Card>
           </Col>
-          <Col>
+          <Col className="mt-5">
             <Card style={{ width: "40rem" }} className="m-2">
               <Card.Body>
                 <Card.Title>
@@ -56,11 +56,10 @@ const MovieDetails = () => {
           Update
         </Button> */}
         <UpdateMovie/>
-        <Button variant="secondary" size="lg" className="m-2">
+        <Button variant="danger" size="lg" className="m-2"onClick={handleDelete} >
           Delete
-        </Button>
-            
-          </Col>
+        </Button>            
+       </Col>
         </Row>
       </Container>
     </>

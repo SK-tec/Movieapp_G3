@@ -56,7 +56,7 @@ function UpdateMovie() {
   return (
     <>
       <Container className="mt-5">
-        <Button variant="primary" className="mb-5" onClick={handleShow}>
+        <Button variant="danger" className="mb-5" onClick={handleShow}>
           UpdateMovie
         </Button>
 

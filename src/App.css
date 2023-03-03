@@ -1,7 +1,9 @@
 .App {
   text-align: center;
+  font-family: "Urbanist", sans-serif;
+  background-color: rgb(3, 10, 54);
   font-family: "Urbanist", sans-serif;  
-  background-color: black;
+
 }
 
 /* Navbar*/
