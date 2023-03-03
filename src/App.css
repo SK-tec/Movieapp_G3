@@ -291,11 +291,36 @@
   background: #2f58cd;
   color: #fff;
 }
-
+#gigihero .gigibtn {
+  border: 0;
+  background: #ffffff;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  /* outline: none; */
+  color: #000000;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#gigihero .gigibtn:hover {
+  background: #2f58cd;
+  color: #fff;
+}
 /* css hero2  section 2 */
-
+.text-logo-container {
+  margin-bottom: -60px;
+}
+.hero-main-container {
+  display: flex;
+}
+.input-group {
+  width: 80%;
+}
 #gigihero {
-  color: #0dcaf0;
+  color: #ffffff;
   background-image: url("images/hero.jpg");
   height: "500px";
   background-position: center;
@@ -304,7 +329,8 @@
   position: relative;
 }
 #gigihero2 {
-  background-color: #20202068;
+  background-color: #35343496;
+  box-shadow: 10px 5px 5px rgb(10 10 10 / 68%);
 }
 #gigihero .gigibtn {
   max-width: 350px;
@@ -315,6 +341,10 @@
 .input-group > .form-select {
   height: calc(3.5rem + 2px);
 }
+.input-group .btn {
+  background: #2f58cd;
+}
+
 /* END css hero2  section  */
 
 /* css footer */
