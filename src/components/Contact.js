@@ -24,11 +24,11 @@ const Contact = () => {
   return (
     <>
       <div className="contact-form-container">
-        <div className="card">
+        <div className="contact-form-card">
           <div className="left">
             <img src={Image}></img>
           </div>
-          <div class="right">
+          <div className="right">
             <h1 className="contact-form-intro">Contact Us</h1>
             <form onSubmit={handleSubmit}>
               <label>
@@ -52,7 +52,7 @@ const Contact = () => {
               Enter your message:
               <textarea
                 name="message"
-                value={inputs.message || ""}
+                value={textarea}
                 onChange={handleChangeText}
               />
               <input type="submit" />
