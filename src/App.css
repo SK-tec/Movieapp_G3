@@ -1,10 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   font-family: "Urbanist", sans-serif;
   background-image: linear-gradient(
     to bottom,
-    #65d8d4 0%,
-    #4a3dbe 31%,
+    #88ceed 5%,
+    #3426ae 31%,
     #31367a 100%
   );
 }
@@ -18,12 +24,7 @@
 }
 
 .nav-link-item {
-  background-image: linear-gradient(
-    to right,
-    #65d8d4,
-    #65d8d4 50%,
-    #ffffff 50%
-  );
+  background-image: linear-gradient(to right, white, white 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -33,12 +34,11 @@
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
   margin: 20px;
-  font-weight: 500;
 }
 
 .nav-link-item:before {
   content: "";
-  background: #65d8d4;
+  background: white;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -316,9 +316,6 @@
 .hero-main-container {
   display: flex;
 }
-.input-group {
-  width: 80%;
-}
 #gigihero {
   color: #ffffff;
   background-image: url("images/hero.jpg");
@@ -331,6 +328,7 @@
 #gigihero2 {
   background-color: #35343496;
   box-shadow: 10px 5px 5px rgb(10 10 10 / 68%);
+  border-radius: 15px;
 }
 #gigihero .gigibtn {
   max-width: 350px;
