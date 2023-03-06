@@ -68,10 +68,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-lg-4 col-md-8 col-xs-12 mb-3">{/*"col-lg-3 col-md-6 col-xs-12 mb-3"*/}
-            <h4>Movie links</h4>
-            <ul className="nav flex-column">
-              <li className="nav-item mb-2">
+          <div className="col-lg-4 col-md-8 col-xs-12 mb-3 ">{/*"col-lg-3 col-md-6 col-xs-12 mb-3"*/}
+            <h4 className="text-center">Movie links</h4>
+            <ul className="nav flex-column text-center">
+            <li className="nav-item mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -82,20 +82,7 @@ export default function Footer() {
                 >
                   <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
                 </svg>{" "}
-                Trending Now
-              </li>
-              <li className="nav-item mb-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="SkyBlue"
-                  className="bi bi-film"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
-                </svg>{" "}
-                From Your Watch List
+                Popular family-friendly movies
               </li>
               <li className="nav-item mb-2">
                 <svg
@@ -121,8 +108,25 @@ export default function Footer() {
                 >
                   <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
                 </svg>{" "}
-                Popular family-friendly movies
+                From Your Watch List
               </li>
+
+              <li className="nav-item mb-2 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="SkyBlue"
+                  className="bi bi-film"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
+                </svg>{" "}
+                Trending Now
+              </li>
+              
+              
+              
             </ul>
           </div>         
 
@@ -183,7 +187,7 @@ export default function Footer() {
       <div className="container-fluid gigi-footer2">
         <div className="container">
           <div className="d-flex flex-wrap justify-content-between align-items-center py-3 ">
-            <div className="col-md-4 d-flex align-items-center">
+            <div className="col-md-6 d-flex align-items-center">
               <span className="mb-3 mb-md-0">
                 &copy; 2023 Ershia / Gabriela / Samatha/ Savitha / Cristian
               </span>

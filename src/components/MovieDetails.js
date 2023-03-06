@@ -146,6 +146,7 @@ const MovieDetails = () => {
                 <Container className="mt-5">
                   <Button                    
                     className="m-2"
+                    id="new-movie-bttn"
                     onClick={handleDelete}
                   >
                     Delete
