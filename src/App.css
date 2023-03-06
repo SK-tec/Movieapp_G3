@@ -15,6 +15,17 @@
   );
 }
 
+/* Media query  */
+@media only screen and (max-width: 768px) {
+  #gigihero .input-group > .form-control,
+  .input-group > .form-floating,
+  .input-group > .form-select {
+    height: initial!important;
+  }
+}
+
+/*END  Media query  */
+
 /* Navbar*/
 
 .my-navbar-container {
@@ -347,6 +358,10 @@ border: 0;
   background-color: #35343496;
   box-shadow: 10px 5px 5px rgb(10 10 10 / 68%);
   border-radius: 15px;
+}
+/*change widht of search form */
+#gigihero2 .input-group {
+  width: 50%;
 }
 #gigihero .gigibtn {
   max-width: 350px;
