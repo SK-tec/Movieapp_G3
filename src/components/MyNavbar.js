@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
 import { NavLink } from "react-router-dom";
@@ -19,8 +18,8 @@ const MyNavbar = () => {
               <img
                 src={Logo}
                 alt="Logo"
-                width="80"
-                height="80"
+                width="90"
+                height="90"
                 className="d-inline-block align-top"
               />
               <img
@@ -46,16 +45,24 @@ const MyNavbar = () => {
               </LinkContainer>
             </Nav>
             <Nav>
-              <LinkContainer to="/login">
-                <Button variant="outline-primary" className="mx-4 text-white">
-                  Log in
-                </Button>
-              </LinkContainer>
-              <LinkContainer to="signup">
-                <Button variant="outline-primary" className="mx-4 text-white">
-                  Sign up
-                </Button>
-              </LinkContainer>
+              <div className="login-signup-bttns">
+                <LinkContainer to="/login">
+                  <Button
+                    variant="outline-primary"
+                    className="mx-4 text-white"
+                    id="login-bttn">
+                    Log in
+                  </Button>
+                </LinkContainer>
+                <LinkContainer to="signup">
+                  <Button
+                    variant="outline-primary"
+                    className="mx-4 text-white"
+                    id="signup-bttn">
+                    Sign up
+                  </Button>
+                </LinkContainer>
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>

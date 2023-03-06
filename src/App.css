@@ -29,8 +29,8 @@
 
 .my-navbar-container {
   color: white;
-  background: black;
-  height: 100px;
+  background: linear-gradient(to right bottom, #30cfd0 0%, #330867 100%);
+  height: 130px;
 }
 
 .nav-link-item {
@@ -45,7 +45,10 @@
   transition: all 0.3s ease-in-out;
   margin: 20px;
 }
-
+#nav-items {
+  font-size: larger;
+  font-weight: bold;
+}
 .nav-link-item:before {
   content: "";
   background: white;
@@ -72,6 +75,28 @@
   align-items: center;
   gap: 10px;
 }
+.login-signup-bttns {
+  display: flex;
+  gap: 5px;
+}
+#login-bttn,
+#signup-bttn {
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#login-bttn:hover,
+#signup-bttn:hover {
+  background: #330867c3;
+  color: #fff;
+}
+/* Navbar end */
 
 /*css About us*/
 
@@ -408,3 +433,21 @@ border: 0;
   font-size: 1.3em;
 }
 /* end css footer */
+
+#new-movie-bttn {
+  background: rgba(255, 255, 255, 0.595);
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#new-movie-bttn:hover {
+  background: #330867c3;
+  color: #fff;
+}

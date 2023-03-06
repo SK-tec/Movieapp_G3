@@ -76,7 +76,7 @@ export default function Footer() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="Tomato"
+                  fill="SkyBlue"
                   className="bi bi-film"
                   viewBox="0 0 16 16"
                 >
@@ -89,7 +89,7 @@ export default function Footer() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="Tomato"
+                  fill="SkyBlue"
                   className="bi bi-film"
                   viewBox="0 0 16 16"
                 >
@@ -102,7 +102,7 @@ export default function Footer() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="Tomato"
+                  fill="SkyBlue"
                   className="bi bi-film"
                   viewBox="0 0 16 16"
                 >
@@ -115,7 +115,7 @@ export default function Footer() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="Tomato"
+                  fill="SkyBlue"
                   className="bi bi-film"
                   viewBox="0 0 16 16"
                 >
@@ -139,7 +139,7 @@ export default function Footer() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="Tomato"
+                  fill="SkyBlue"
                   className="bi bi-telephone"
                   viewBox="0 0 16 16"
                 >
@@ -152,7 +152,7 @@ export default function Footer() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="Tomato"
+                  fill="SkyBlue"
                   className="bi bi-envelope"
                   viewBox="0 0 16 16"
                 >
@@ -166,7 +166,7 @@ export default function Footer() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
-                  fill="Tomato"
+                  fill="SkyBlue"
                   className="bi bi-geo-alt"
                   viewBox="0 0 16 16"
                 >
