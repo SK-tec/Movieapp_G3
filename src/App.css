@@ -330,6 +330,10 @@
   box-shadow: 10px 5px 5px rgb(10 10 10 / 68%);
   border-radius: 15px;
 }
+/*changee widht of search form */
+#gigihero2 .input-group {
+  width: 50%;
+}
 #gigihero .gigibtn {
   max-width: 350px;
 }
