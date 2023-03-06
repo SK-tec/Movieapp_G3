@@ -1,15 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   font-family: "Urbanist", sans-serif;
-  background-color: rgb(3, 10, 54);
-  font-family: "Urbanist", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    #88ceed 5%,
+    #3426ae 31%,
+    #31367a 100%
+  );
 }
 
 /* Navbar*/
 
-#MyNavbar {
+.my-navbar-container {
   color: white;
-  background: #000000;
+  background: black;
+  height: 100px;
+}
+
+.nav-link-item {
+  background-image: linear-gradient(to right, white, white 50%, #ffffff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  margin: 20px;
+}
+
+.nav-link-item:before {
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-item:hover {
+  background-position: 0;
+}
+
+.nav-link-item:hover::before {
+  width: 100%;
 }
 
 .navbar-brand {
@@ -18,15 +62,7 @@
   align-items: center;
   gap: 10px;
 }
-.navbar-nav {
-  padding-right: 10px;
-  gap: 20px;
-}
 
-/* end css header */
-#collasible-nav-dropdown {
-  color: white;
-}
 /*css About us*/
 
 .about-container {
@@ -146,8 +182,7 @@
 }
 
 /*hero section end here */
-.movie-grid img{
-
+.movie-grid img {
   width: 100%;
   height: 18vw;
   padding: 5px;
@@ -157,7 +192,6 @@
   background-color: rgb(167, 98, 98);
   color: white;
 }
-
 
 .contact-form-container {
   position: relative;
@@ -257,36 +291,59 @@
   background: #2f58cd;
   color: #fff;
 }
-
-
+#gigihero .gigibtn {
+  border: 0;
+  background: #ffffff;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  /* outline: none; */
+  color: #000000;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#gigihero .gigibtn:hover {
+  background: #2f58cd;
+  color: #fff;
+}
 /* css hero2  section 2 */
-
-#gigihero{
-  color: #0dcaf0;
-  background-image: url('images/hero.jpg');
-  height: '500px';
+.text-logo-container {
+  margin-bottom: -60px;
+}
+.hero-main-container {
+  display: flex;
+}
+#gigihero {
+  color: #ffffff;
+  background-image: url("images/hero.jpg");
+  height: "500px";
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  
 }
-#gigihero2{
-  
-  background-color: #20202068;
+#gigihero2 {
+  background-color: #35343496;
+  box-shadow: 10px 5px 5px rgb(10 10 10 / 68%);
+  border-radius: 15px;
 }
-#gigihero .gigibtn{
-  
- max-width: 350px;
+#gigihero .gigibtn {
+  max-width: 350px;
 }
 
-#gigihero .input-group > .form-control, .input-group > .form-floating, .input-group > .form-select {
+#gigihero .input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
   height: calc(3.5rem + 2px);
-  
 }
+.input-group .btn {
+  background: #2f58cd;
+}
+
 /* END css hero2  section  */
-
-
 
 /* css footer */
 
@@ -319,4 +376,3 @@
   font-size: 1.3em;
 }
 /* end css footer */
-
