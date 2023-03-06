@@ -144,8 +144,7 @@ const MovieDetails = () => {
               </Col>
               <Col>
                 <Container className="mt-5">
-                  <Button
-                    variant="danger"
+                  <Button                    
                     className="m-2"
                     onClick={handleDelete}
                   >
@@ -164,7 +163,7 @@ const MovieDetails = () => {
                 controlId="exampleForm.ControlTextarea1"
               >
                 <Form.Label>
-                  <h4 className="text-white bg-danger">Add a Comment</h4>{" "}
+                  <h4 className="text-white">Add a Comment</h4>{" "}
                 </Form.Label>
                 <Form.Control
                   as="textarea"
@@ -180,7 +179,7 @@ const MovieDetails = () => {
             {" "}
             <br />
             <Button
-              variant="danger"
+              
               size="sm"
               className="mt-5"
               onClick={handleAddComment}
@@ -201,7 +200,7 @@ const MovieDetails = () => {
 
                   <Col>
                     <Button
-                      variant="danger"
+                    
                       size="sm"
                       className="m-2"
                       onClick={(e) => {
