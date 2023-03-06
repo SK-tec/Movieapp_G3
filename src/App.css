@@ -7,12 +7,7 @@
 .App {
   text-align: center;
   font-family: "Urbanist", sans-serif;
-  background-image: linear-gradient(
-    to bottom,
-    #88ceed 5%,
-    #3426ae 31%,
-    #31367a 100%
-  );
+  background-color: #000000;
 }
 
 /* Media query  */
@@ -20,7 +15,7 @@
   #gigihero .input-group > .form-control,
   .input-group > .form-floating,
   .input-group > .form-select {
-    height: initial!important;
+    height: initial !important;
   }
 }
 
@@ -220,25 +215,22 @@
 .movie-grid img {
   width: 100%;
   height: 18vw;
-  
- 
 }
-.card{
-  background-color: transparent ;
+.card {
+  background-color: transparent;
   border: none;
 }
-.card img{
+.card img {
   border: 2px solid #ffffff;
   border-radius: 10px;
- 
 }
 
-.card:hover{
+.card:hover {
   border-color: rgb(13, 110, 253);
-  transform: scale(1.03);  
- }
+  transform: scale(1.03);
+}
 
- /* .img-thumbnail {
+/* .img-thumbnail {
   padding: 0.01rem;
 border: 0;
 } */
@@ -318,7 +310,7 @@ border: 0;
   justify-content: center;
   gap: 10px;
   padding: 10px;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
 }
 .form-input {
   border-radius: 5px;
@@ -411,6 +403,10 @@ border: 0;
 }
 #footer .py-5 {
   padding-bottom: 1rem !important;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-left: 51px;
 }
 #footer .input-group > .form-control,
 .input-group > .form-floating,
@@ -450,4 +446,40 @@ border: 0;
 #new-movie-bttn:hover {
   background: #330867c3;
   color: #fff;
+}
+#movie-title-link {
+  background-image: linear-gradient(
+    to right,
+    #86dfff,
+    #86dfff 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#movie-title-link:before {
+  content: "";
+  background: #86dfff;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#movie-title-link:hover {
+  background-position: 0;
+}
+
+#movie-title-link:hover::before {
+  width: 100%;
 }
