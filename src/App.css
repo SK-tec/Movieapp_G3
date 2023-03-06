@@ -5,13 +5,13 @@
 }
 
 .App {
+  scroll-behavior: smooth;
   text-align: center;
   font-family: "Urbanist", sans-serif;
-  background-image: linear-gradient(
-    to bottom,
-    #88ceed 5%,
-    #3426ae 31%,
-    #31367a 100%
+  background: linear-gradient(
+    179.4deg,
+    rgb(12, 20, 69) -16.9%,
+    rgb(71, 30, 84) 119.9%
   );
 }
 
@@ -19,8 +19,8 @@
 
 .my-navbar-container {
   color: white;
-  background: black;
-  height: 100px;
+  background: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+  height: 130px;
 }
 
 .nav-link-item {
@@ -35,7 +35,10 @@
   transition: all 0.3s ease-in-out;
   margin: 20px;
 }
-
+#nav-items {
+  font-size: larger;
+  font-weight: bold;
+}
 .nav-link-item:before {
   content: "";
   background: white;
@@ -62,6 +65,28 @@
   align-items: center;
   gap: 10px;
 }
+.login-signup-bttns {
+  display: flex;
+  gap: 5px;
+}
+#login-bttn,
+#signup-bttn {
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#login-bttn:hover,
+#signup-bttn:hover {
+  background: #330867c3;
+  color: #fff;
+}
+/* Navbar end */
 
 /*css About us*/
 
@@ -146,42 +171,6 @@
   gap: 20px;
 }
 
-/* Hero section
-.hero {
-  
-  height: "500px";
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  color: yellow;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #9fe6f0;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-
-/*hero section end here */
 .movie-grid img {
   width: 100%;
   height: 18vw;
@@ -192,7 +181,7 @@
   background-color: rgb(167, 98, 98);
   color: white;
 }
-
+/* Contact us page */
 .contact-form-container {
   position: relative;
   display: flex;
@@ -291,27 +280,29 @@
   background: #2f58cd;
   color: #fff;
 }
+/* Contact us page ends */
+
+/* Hero section */
 #gigihero .gigibtn {
-  border: 0;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.595);
   display: block;
   margin: 10px auto;
   text-align: center;
+  color: #000000;
+  font-weight: bold;
   border: 1px solid #fff;
   padding: 10px 30px;
-  /* outline: none; */
-  color: #000000;
   border-radius: 20px;
   transition: 0.2s;
   cursor: pointer;
 }
 #gigihero .gigibtn:hover {
-  background: #2f58cd;
+  background: #330867c3;
   color: #fff;
 }
 /* css hero2  section 2 */
 .text-logo-container {
-  margin-bottom: -60px;
+  margin-bottom: -50px;
 }
 .hero-main-container {
   display: flex;
@@ -319,11 +310,15 @@
 #gigihero {
   color: #ffffff;
   background-image: url("images/hero.jpg");
-  height: "500px";
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  box-shadow: 10px 5px 5px rgb(10 10 10 / 68%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #gigihero2 {
   background-color: #35343496;
@@ -340,10 +335,16 @@
   height: calc(3.5rem + 2px);
 }
 .input-group .btn {
-  background: #2f58cd;
+  background: rgba(255, 255, 255, 0.595);
+  border: 1px solid #fff;
+}
+.input-group .btn:hover {
+  background: #330867c3;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-/* END css hero2  section  */
+/* Hero section end */
 
 /* css footer */
 
