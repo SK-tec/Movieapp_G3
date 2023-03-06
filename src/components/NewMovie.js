@@ -49,7 +49,11 @@ const NewMovie = () => {
   return (
     <>
       <Container className="mt-5">
-        <Button variant="primary" className="mb-5" onClick={handleShow}>
+        <Button
+          variant="primary"
+          className="mb-5"
+          onClick={handleShow}
+          id="new-movie-bttn">
           Add New Movie
         </Button>
 
@@ -61,8 +65,7 @@ const NewMovie = () => {
             <Form>
               <Form.Group
                 className="mb-3"
-                controlId="exampleForm.ControlInput1"
-              >
+                controlId="exampleForm.ControlInput1">
                 <Form.Label>Title</Form.Label>
                 <Form.Control
                   required
@@ -75,8 +78,7 @@ const NewMovie = () => {
               </Form.Group>
               <Form.Group
                 className="mb-3"
-                controlId="exampleForm.ControlInput1"
-              >
+                controlId="exampleForm.ControlInput1">
                 <Form.Label>Director</Form.Label>
                 <Form.Control
                   required
@@ -89,8 +91,7 @@ const NewMovie = () => {
               </Form.Group>
               <Form.Group
                 className="mb-3"
-                controlId="exampleForm.ControlInput1"
-              >
+                controlId="exampleForm.ControlInput1">
                 <Form.Label>Year</Form.Label>
                 <Form.Control
                   required
@@ -103,8 +104,7 @@ const NewMovie = () => {
               </Form.Group>
               <Form.Group
                 className="mb-3"
-                controlId="exampleForm.ControlInput1"
-              >
+                controlId="exampleForm.ControlInput1">
                 <Form.Label>Rating</Form.Label>
                 <Form.Control
                   required
@@ -117,8 +117,7 @@ const NewMovie = () => {
               </Form.Group>
               <Form.Group
                 className="mb-3"
-                controlId="exampleForm.ControlInput1"
-              >
+                controlId="exampleForm.ControlInput1">
                 <Form.Label>Poster</Form.Label>
                 <Form.Control
                   required
@@ -131,8 +130,7 @@ const NewMovie = () => {
               </Form.Group>
               <Form.Group
                 className="mb-3"
-                controlId="exampleForm.ControlTextarea1"
-              >
+                controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Synopsis</Form.Label>
                 <Form.Control
                   as="textarea"
