@@ -22,31 +22,23 @@ const Movies = () => {
       <Container fluid className="movie-grid mt-5  p-4 y">
         <Row className="justify-content-center">
           {movies.map((movie) => (
+            
             <Card
               style={{ width: "18rem", backgroundColor: "transparent" }}
               className="m-2 border-0 "
               key={movie.id}>
-              <Card.Img variant="top" src={movie.poster} />
+              <Link to={`/movies/${movie.id}`}>
+              <Card.Img variant="top"  src={movie.poster} />
               <Card.Body>
-                <Card.Title>
-                  <Link
-                    to={`/movies/${movie.id}`}
-                    style={{ textDecoration: "none" }}
+                <Card.Title style={{ textDecoration: "none" }}
                     className="text-white"
-                    id="movie-title-link">
-                    {movie.title}
-                  </Link>
+                    id="movie-title-link">                 
+                  {movie.title}
                 </Card.Title>
-                {/* <Card.Text>
-            {movie.synopsis}
-          </Card.Text> */}
               </Card.Body>
-              {/* <ListGroup className="list-group-flush">
-        <ListGroup.Item className='text-bg-warning'><strong>Director: </strong>{movie.director}</ListGroup.Item>
-        <ListGroup.Item className='text-bg-danger'><strong>Release Year: </strong>{movie.year}</ListGroup.Item>
-        <ListGroup.Item className='text-bg-success'><strong>Rating: </strong>{movie.rating}</ListGroup.Item>
-      </ListGroup> */}
+              </Link>
             </Card>
+           
           ))}
         </Row>
       </Container>
